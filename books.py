@@ -1,4 +1,4 @@
-from books import livres, aime_livres, utilisateurs
+from data import livres, aime_livres, utilisateurs
 
 
 # 1. Trier les livres
@@ -20,3 +20,9 @@ i = 0
 while i < len(utilisateurs):
     print(utilisateurs[i:i+2])
     i += 2
+
+
+    # afficher_livres
+    def afficher_livres(livres):
+     for livre in livres:
+        print(f"{livre['titre']} - {livre['auteur']} ({livre['année']})")
